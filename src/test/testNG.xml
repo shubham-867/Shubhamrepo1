@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite"  thread-count="2" parallel="tests">
+<!--    <listeners>-->
+<!--        <listener class-name="BaseTest.ExtentListener" />-->
+<!--    </listeners>-->
+<!--    <test verbose="2" preserve-order="true" name="FirefoxTest">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="AppTest.appHomePage">-->
+<!--                <methods>-->
+<!--                    <include name="TC01verifyElements"/>-->
+<!--                </methods>-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test verbose="2" preserve-order="true" name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="AppTest.appHomePage">
+                <methods>
+                    <include name="TC01verifyElements"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+
+<!--        <test name="EdgeTest">-->
+<!--            <classes>-->
+<!--                <class name="AppTest.appHomePage">-->
+<!--                <parameter name="browser" value="Edge"/>-->
+<!--                <methods>-->
+<!--                    <include name="TC01verifyElements"/>-->
+<!--                </methods>-->
+<!--                </class>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--    <test name="chromeTest">-->
+
+<!--        <classes>-->
+<!--            <class name="AppTest.appProgressBars">-->
+<!--                <methods>-->
+<!--                    <parameter name="browser" value="chrome"/>-->
+<!--                    <include name="TC01ProgressBar1"/>-->
+<!--                </methods>-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>    -->
+
+<!--    <test name="chromeTest">-->
+
+<!--        <classes>-->
+<!--            <class name="AppTest.appNavigateandGet">-->
+<!--                <methods>-->
+<!--                    <parameter name="browser" value="chrome"/>-->
+<!--                    <include name="test"/>-->
+<!--                </methods>-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+
+</suite>
