@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CaptureScreenShot {
-
+ //GIT DEMO
     public  static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyy_MM_dd SSS");
 
     public static String captureScreen(WebDriver driver, long time) throws IOException {
