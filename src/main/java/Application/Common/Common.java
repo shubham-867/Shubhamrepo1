@@ -26,13 +26,14 @@ public class Common extends Base {
 //    } catch (TimeoutException exception) {
 //        System.out.println(exception.getCause().toString());
 //    }
-    
+
 
     public void clickAnElement(By element) {
         try{
 
             elementToBeClickable(element); // wait
             Assert.assertEquals(getWebElement(element).isEnabled(),true);
+            System.out.println("Asssert"); // just for git practice ..
 //            pass("In "+ pagename + "-"+getWebElement(element).getText() + "Element is successfully clicked");
 //            pass("In " + "-"+getWebElement(element).getText() + "Element is successfully clicked");
 // write for clicking a object wiout text
