@@ -20,7 +20,7 @@ public class CaptureScreenShot {
     public static String captureScreen(WebDriver driver, long time) throws IOException {
         TakesScreenshot screen = (TakesScreenshot)driver;
         File src= screen.getScreenshotAs(OutputType.FILE);
-        System.out.println("GIT Merger Demo"); // GIT demo;
+
 //        File src = (TakesScreenshot)driver.getScreenshotAs(OutputType.FILE); same as above in a single line
 
         String dest = System.getProperty("Screenshotpath")+"Test-Screenshots\\"+ time+".png";
